@@ -38,8 +38,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const enableSaveChatHistory =
-    process.env.NEXT_PUBLIC_ENABLE_SAVE_CHAT_HISTORY === 'true'
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={cn('font-sans antialiased', fontSans.variable)}>
@@ -51,7 +49,6 @@ export default function RootLayout({
         >
           <Header />
           {children}
-          {enableSaveChatHistory && <Sidebar />}
           <Toaster />
         </ThemeProvider>
       </body>
