@@ -12,7 +12,7 @@ const fontSans = FontSans({
   variable: '--font-sans'
 })
 
-const title = 'batresearch'
+const title = 'BatResearch'
 const description =
   'A fully open-source AI-powered answer engine with a generative UI.'
 
